@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Muhammad Murtaza - Resume</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#505f76",
+                    "on-tertiary-fixed-variant": "#43474b",
+                    "on-primary-container": "#9eadc5",
+                    "surface-container-low": "#f0f3ff",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "outline-variant": "#c5c6cd",
+                    "secondary-fixed-dim": "#b7c8e1",
+                    "tertiary": "#262b2e",
+                    "surface-container-highest": "#d8e3fb",
+                    "surface-variant": "#d8e3fb",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#ecf1ff",
+                    "on-secondary-container": "#54647a",
+                    "on-tertiary-fixed": "#171c1f",
+                    "tertiary-fixed": "#dfe3e7",
+                    "surface-container": "#e7eeff",
+                    "primary-container": "#334155",
+                    "primary": "#1d2b3e",
+                    "error-container": "#ffdad6",
+                    "inverse-primary": "#b9c7e0",
+                    "tertiary-fixed-dim": "#c3c7cb",
+                    "on-secondary-fixed-variant": "#38485d",
+                    "primary-fixed": "#d5e3fd",
+                    "surface-bright": "#f9f9ff",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#b9c7e0",
+                    "inverse-surface": "#263143",
+                    "surface-tint": "#515f74",
+                    "secondary-fixed": "#d3e4fe",
+                    "surface": "#f9f9ff",
+                    "on-surface-variant": "#44474c",
+                    "on-error-container": "#93000a",
+                    "outline": "#75777d",
+                    "surface-container-high": "#dee8ff",
+                    "secondary-container": "#d0e1fb",
+                    "tertiary-container": "#3c4144",
+                    "on-background": "#111c2d",
+                    "on-secondary-fixed": "#0b1c30",
+                    "on-primary-fixed": "#0d1c2f",
+                    "on-surface": "#111c2d",
+                    "surface-dim": "#cfdaf2",
+                    "on-tertiary-container": "#a8adb1",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed-variant": "#3a485c",
+                    "surface-container-lowest": "#ffffff",
+                    "background": "#f9f9ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "2rem",
+                    "page-margin": "1.5rem",
+                    "main-content-width": "67%",
+                    "item-gap": "1rem",
+                    "bullet-indent": "1.25rem",
+                    "sidebar-width": "33%"
+            },
+            "fontFamily": {
+                    "section-header": [
+                            "Source Sans 3"
+                    ],
+                    "body-md": [
+                            "Open Sans"
+                    ],
+                    "name-display": [
+                            "Source Sans 3"
+                    ],
+                    "organization": [
+                            "Open Sans"
+                    ],
+                    "sidebar-label": [
+                            "Source Sans 3"
+                    ],
+                    "job-title": [
+                            "Open Sans"
+                    ],
+                    "metadata": [
+                            "Source Sans 3"
+                    ]
+            },
+            "fontSize": {
+                    "section-header": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "11px",
+                            {
+                                    "lineHeight": "18px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "name-display": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "organization": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "sidebar-label": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "job-title": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "metadata": [
+                            "10px",
+                            {
+                                    "lineHeight": "14px",
+                                    "fontWeight": "500"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background min-h-screen text-on-surface antialiased flex flex-col md:flex-row">
+<!-- TopAppBar (Mobile Only - Replaced by Layout on Web) -->
+<header class="md:hidden bg-surface border-b border-outline-variant w-full flex flex-col items-center py-6 px-page-margin">
+<h1 class="font-name-display text-name-display text-primary uppercase tracking-tight">Muhammad Murtaza</h1>
+<div class="flex flex-wrap justify-center gap-4 mt-2">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm">contact_phone</span>
+<span class="font-metadata text-metadata">03171421484</span>
+</div>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm">mail</span>
+<span class="font-metadata text-metadata">murtazawarraich450@gmail.com</span>
+</div>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="font-metadata text-metadata">Gujrat, Pakistan</span>
+</div>
+</div>
+</header>
+<!-- SideNavBar (Desktop: Left Column, Mobile: Stacked) -->
+<aside class="w-full md:w-sidebar-width md:min-h-screen bg-tertiary-fixed md:fixed left-0 top-0 flex flex-col px-page-margin py-10 md:pt-24 border-b md:border-b-0 md:border-r border-outline-variant">
+<!-- Desktop Header Anchor -->
+<div class="hidden md:block mb-10">
+<h1 class="font-name-display text-name-display text-primary uppercase tracking-tight leading-tight mb-4">Muhammad Murtaza</h1>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-sm">contact_phone</span>
+<span class="font-metadata text-metadata">03171421484</span>
+</div>
+<div class="flex items-center gap-2 text-secondary break-all">
+<span class="material-symbols-outlined text-sm">mail</span>
+<span class="font-metadata text-metadata">murtazawarraich450@gmail.com</span>
+</div>
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="font-metadata text-metadata">Gujrat, Pakistan</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-section-gap">
+<!-- Core Competencies Section -->
+<section>
+<div class="mb-4">
+<h2 class="font-section-header text-section-header text-primary uppercase">Core Competencies</h2>
+<div class="h-px bg-outline-variant w-full mt-1"></div>
+</div>
+<!-- Skills -->
+<div class="mb-6">
+<h3 class="font-sidebar-label text-sidebar-label text-on-tertiary-fixed mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">psychology</span> Skills
+                    </h3>
+<ul class="flex flex-col gap-3">
+<li class="">
+<div class="flex justify-between items-center mb-1">
+<span class="font-body-md text-body-md text-on-tertiary-fixed-variant">HTML</span>
+</div>
+<div class="w-full bg-tertiary-fixed-dim h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[85%] rounded-full"></div>
+</div>
+</li>
+<li class="">
+<div class="flex justify-between items-center mb-1">
+<span class="font-body-md text-body-md text-on-tertiary-fixed-variant">CSS</span>
+</div>
+<div class="w-full bg-tertiary-fixed-dim h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[75%] rounded-full"></div>
+</div>
+</li>
+<li class="">
+<div class="flex justify-between items-center mb-1">
+<span class="font-body-md text-body-md text-on-tertiary-fixed-variant">Basic Web Development</span>
+</div>
+<div class="w-full bg-tertiary-fixed-dim h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[60%] rounded-full"></div>
+</div>
+</li>
+</ul>
+</div>
+<!-- Languages -->
+<div>
+<h3 class="font-sidebar-label text-sidebar-label text-on-tertiary-fixed mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">translate</span> Languages
+                    </h3>
+<ul class="flex flex-col gap-2">
+<li class="flex items-center gap-2">
+<div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
+<span class="font-body-md text-body-md text-on-tertiary-fixed-variant">Urdu <span class="text-secondary">(Native)</span></span>
+</li>
+<li class="flex items-center gap-2">
+<div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
+<span class="font-body-md text-body-md text-on-tertiary-fixed-variant">English <span class="text-secondary">(Professional)</span></span>
+</li>
+</ul>
+</div>
+</section>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 w-full md:w-main-content-width md:ml-[33%] bg-surface px-page-margin py-10 md:pt-24 flex flex-col max-w-4xl">
+<div class="flex flex-col gap-section-gap">
+<!-- Career Objective -->
+<section class="relative">
+<div class="mb-4 flex items-center gap-4">
+<h2 class="font-section-header text-section-header text-primary uppercase shrink-0">Career Objective</h2>
+<div class="h-px bg-outline-variant w-full mt-1"></div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg border border-surface-container-highest relative overflow-hidden">
+<!-- Subtle Decorative Element -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-fixed opacity-20 rounded-full blur-2xl -mr-10 -mt-10 pointer-events-none"></div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed relative z-10">
+                        Motivated and enthusiastic individual seeking an entry-level opportunity to apply and develop web development skills. Eager to learn, grow professionally, and contribute to organizational success.
+                    </p>
+</div>
+</section><section class="relative">
+<div class="mb-4 flex items-center gap-4">
+<h2 class="font-section-header text-section-header text-primary uppercase shrink-0">Projects</h2>
+<div class="h-px bg-outline-variant w-full mt-1"></div>
+</div>
+<div class="flex flex-col gap-6">
+<div class="bg-surface-container-low p-6 rounded-lg border border-surface-container-highest">
+<h3 class="font-job-title text-job-title text-primary mb-2">Personal Portfolio Website</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-0.5 bg-surface-container-high text-on-secondary-container font-metadata text-metadata rounded-full">HTML</span>
+<span class="px-2 py-0.5 bg-surface-container-high text-on-secondary-container font-metadata text-metadata rounded-full">CSS</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg border border-surface-container-highest">
+<h3 class="font-job-title text-job-title text-primary mb-2">Simple Web-Pages and Forms</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-0.5 bg-surface-container-high text-on-secondary-container font-metadata text-metadata rounded-full">HTML</span>
+<span class="px-2 py-0.5 bg-surface-container-high text-on-secondary-container font-metadata text-metadata rounded-full">CSS</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg border border-surface-container-highest">
+<h3 class="font-job-title text-job-title text-primary mb-2">Making CV</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-0.5 bg-surface-container-high text-on-secondary-container font-metadata text-metadata rounded-full">HTML</span>
+<span class="px-2 py-0.5 bg-surface-container-high text-on-secondary-container font-metadata text-metadata rounded-full">CSS</span>
+</div>
+</div></div>
+</section>
+<!-- Education Section -->
+<section class="relative">
+<div class="mb-4 flex items-center gap-4">
+<h2 class="font-section-header text-section-header text-primary uppercase shrink-0">Education</h2>
+<div class="h-px bg-outline-variant w-full mt-1"></div>
+</div>
+<div class="flex flex-col gap-6">
+<div class="bg-surface-container-low p-6 rounded-lg border border-surface-container-highest">
+<div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+<h3 class="font-job-title text-job-title text-primary">Intermediate</h3>
+<span class="font-metadata text-metadata text-secondary bg-surface-container px-2 py-1 rounded">Expected Completion: 2025</span>
+</div>
+<h4 class="font-organization text-organization text-secondary mb-3">Punjab College</h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-0.5 bg-surface-container-high text-on-secondary-container font-metadata text-metadata rounded-full">Mathematics</span>
+<span class="px-2 py-0.5 bg-surface-container-high text-on-secondary-container font-metadata text-metadata rounded-full">Physics</span>
+<span class="px-2 py-0.5 bg-surface-container-high text-on-secondary-container font-metadata text-metadata rounded-full">Computer Science</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Hobbies Section -->
+<section class="relative">
+<div class="mb-4 flex items-center gap-4">
+<h2 class="font-section-header text-section-header text-primary uppercase shrink-0">Hobbies</h2>
+<div class="h-px bg-outline-variant w-full mt-1"></div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg border border-surface-container-highest">
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-0.5 bg-surface-container-high text-on-secondary-container font-metadata text-metadata rounded-full">Playing Cricket</span>
+<span class="px-2 py-0.5 bg-surface-container-high text-on-secondary-container font-metadata text-metadata rounded-full">Playing Badminton</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Footer -->
+<footer class="mt-auto pt-16 pb-8 border-t border-outline-variant w-full flex flex-col sm:flex-row justify-between items-center gap-4">
+<span class="font-body-md text-body-md text-secondary">© 2026 Muhammad Murtaza</span>
+<div class="flex items-center gap-item-gap">
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#">LinkedIn</a>
+</div>
+</footer>
+</main>
+</body></html>
